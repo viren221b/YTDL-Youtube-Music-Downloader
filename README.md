@@ -1,0 +1,16 @@
+# yt-music-dl
+
+A CLI tool to download YouTube videos as mp3.
+
+## Dependencies
+- Python 3
+- ffmpeg (install via your package manager)
+
+## Installation
+1. git clone <your repo>
+2. pip install -r requirements.txt
+3. chmod +x yt-music-dl-main.py
+4. sudo ln -s /path/to/yt-music-dl-main.py /usr/local/bin/ytdl
+
+## Usage
+Just type `ytdl` in your terminal.
