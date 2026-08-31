@@ -1,6 +1,7 @@
-# yt-music-dl
+<<<<<<< HEAD
+# ytdl-ver-1.1
 
-A CLI tool to download YouTube videos as mp3.
+A CLI tool/script to download YouTube videos as mp3.
 
 ## Dependencies
 - Python 3
@@ -22,3 +23,24 @@ ver 1.1: added a chapter split feature for yt videos that have split chapters
 ##Supported Systems
 - This python script is mainly made for linux users, so you might wanna add linux sub-system for windows or mac if you're in that respective operating systems.
 
+=======
+# yt-music-dl
+
+A CLI tool to download YouTube videos as mp3.
+
+## Dependencies
+- Python 3
+- ffmpeg (install via your package manager)
+
+## Installation
+1. git clone <your repo>
+2. pip install -r requirements.txt
+3. chmod +x yt-music-dl-main.py
+4. sudo ln -s /path/to/yt-music-dl-main.py /usr/local/bin/ytdl
+
+## Usage
+Just type `ytdl` in your terminal.
+
+##Supported Systems
+- This python script is mainly made for linux users, so you might wanna add linux sub-system for windows or mac if you're in that respective operating systems.
+>>>>>>> 039dfbf1b45400059980aee919579f7e62394b45
