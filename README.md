@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ytdl-ver-1.1
 
 A CLI tool/script to download YouTube videos as mp3.
@@ -43,4 +42,3 @@ Just type `ytdl` in your terminal.
 
 ##Supported Systems
 - This python script is mainly made for linux users, so you might wanna add linux sub-system for windows or mac if you're in that respective operating systems.
->>>>>>> 039dfbf1b45400059980aee919579f7e62394b45
