@@ -11,7 +11,7 @@ A CLI tool/script to download YouTube videos as mp3.
 1. git clone <your repo>
 2. pip install -r requirements.txt
 3. chmod +x yt-music-dl-main.py
-4. sudo ln -s /path/to/yt-music-dl-main.py /usr/local/bin/ytdl
+4. sudo ln -s /path/to/ytdl-ver-1-1.py /usr/local/bin/ytdl
 
 ## Usage
 Just type `ytdl` in your terminal.
