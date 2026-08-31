@@ -16,25 +16,27 @@
 #MAIN
 import yt_dlp
 
-def download_audio(video_url, save_path, no_playlist, split_chapters):
+def download_audio(video_url, save_path, no_playlist, split_chapters, format_choice):
     if split_chapters:
         postprocessors = [
-            {'key': 'FFmpegSplitChapters'},
-            {'key': 'FFmpegExtractAudio', 'preferredcodec': 'mp3', 'preferredquality': '0'}
+            {'key': 'FFmpegExtractAudio', 'preferredcodec': format_choice.lower(), 'preferredquality': '0'},
+            {'key': 'FFmpegSplitChapters'}
         ]
         outtmpl = {
             'default': save_path + '/%(title)s/%(title)s.%(ext)s',
             'chapter': save_path + '/%(title)s/%(section_title)s.%(ext)s'
         }
+        ydl_format = 'bestaudio[ext=m4a]/bestaudio/best'
     else:
         postprocessors = [
-            {'key': 'FFmpegExtractAudio', 'preferredcodec': 'mp3', 'preferredquality': '0'}
+            {'key': 'FFmpegExtractAudio', 'preferredcodec': format_choice.lower(), 'preferredquality': '0'}
         ]
         outtmpl = save_path +'/%(title)s.%(ext)s'
-
+        ydl_format = 'bestaudio/best'
+        
     ydl_opts = {
          'noplaylist': no_playlist,
-         'format': 'bestaudio[ext=m4a]/bestaudio/best',
+         'format': ydl_format,
          'outtmpl': outtmpl,
          'postprocessors': postprocessors,
          'verbose': True,
@@ -47,6 +49,7 @@ def download_audio(video_url, save_path, no_playlist, split_chapters):
 while True:
     yt_link = input("Paste YT link or playlist link here:\n") 
     save_path = input("Input desired file path:\n")
+    format_choice = input("Choose format (mp3/m4a):\n")
     
     with yt_dlp.YoutubeDL({'quiet': True}) as ydl:
         info = ydl.extract_info(yt_link, download=False)
@@ -70,7 +73,7 @@ while True:
         split_chapters = False
 
     #create a loop function to continue the script otherwise give exit function
-    download_audio(yt_link, save_path, no_playlist, split_chapters)
+    download_audio(yt_link, save_path, no_playlist, split_chapters, format_choice)
     again = input("Want to download another? (y/n):\n")
     if again.lower() == 'n':
         break
