@@ -17,7 +17,7 @@ A CLI tool/script to download YouTube videos as mp3.
 Just type `ytdl` in your terminal.
 
 ## updates:
-# ver 1.2
+ver 1.2
 - Added loading screen for background processes
 - Directory validation
 - URL validation
