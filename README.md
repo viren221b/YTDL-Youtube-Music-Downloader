@@ -17,7 +17,9 @@ A CLI tool/script to download YouTube videos as mp3.
 Just type `ytdl` in your terminal.
 
 ## updates:
-ver 1.1: added a chapter split feature for yt videos that have split chapters
+# ver 1.1: 
+- added a chapter split feature for yt videos that have split chapters
+- added format choice feature
 
 ## Supported Systems
 - This python script is mainly made for linux users, so you might wanna add linux sub-system for windows or mac if you're in that respective operating systems.
