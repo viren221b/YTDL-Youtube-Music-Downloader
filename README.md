@@ -1,6 +1,6 @@
 # ytdl-ver-1.2
 
-A CLI tool/script to download YouTube videos as mp3.
+- A CLI tool/script to download YouTube videos as mp3.
 
 ## Dependencies
 - Python 3
@@ -14,13 +14,13 @@ A CLI tool/script to download YouTube videos as mp3.
 4. sudo ln -s /path/to/ytdl-ver-1-1.py /usr/local/bin/ytdl
 
 ## Usage
-Just type `ytdl` in your terminal.
+- Just type `ytdl` in your terminal.
 
 ## updates:
-ver 1.2
-- Added loading screen for background processes
-- Directory validation
-- URL validation
+- ver 1.2
+  - Added loading screen for background processes
+  - Directory validation
+  - URL validation
 
 ## Supported websites
 - This CLI script is mainly built for YouTube, but since it's yt-dlp based, it can support a wide variety of websites. To see what websites are compatible visit: https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md
